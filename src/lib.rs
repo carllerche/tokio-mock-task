@@ -1,4 +1,4 @@
-#![doc(html_root_url = "https://docs.rs/tokio-mock-task/0.1.0")]
+#![doc(html_root_url = "https://docs.rs/tokio-mock-task/0.1.1")]
 #![deny(missing_debug_implementations, missing_docs)]
 #![cfg_attr(test, deny(warnings))]
 
