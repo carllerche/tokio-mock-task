@@ -66,6 +66,13 @@ impl MockTask {
     pub fn is_notified(&self) -> bool {
         self.notify.is_notified()
     }
+
+    /// Returns the number of references to the task notifier
+    ///
+    /// The task itself holds a reference. The return value will never be zero.
+    pub fn notifier_ref_count(&self) -> usize {
+        Arc::strong_count(&self.notify)
+    }
 }
 
 impl ThreadNotify {
